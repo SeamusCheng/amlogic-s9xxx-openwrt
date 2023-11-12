@@ -20,11 +20,7 @@ echo "DISTRIB_SOURCECODE='official'" >>package/base-files/files/etc/openwrt_rele
 # Modify default network settings
 sed -i 's/192.168.1.1/192.168.3.2/g' package/base-files/files/bin/config_generate
 
-# Modify subnet mask
-sed -i 's/255.255.255.0/255.255.255.0/g' package/base-files/files/bin/config_generate
 
-# Modify gateway
-sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generate
 # ------------------------------- Main source ends -------------------------------
 
 # ------------------------------- Other started -------------------------------
